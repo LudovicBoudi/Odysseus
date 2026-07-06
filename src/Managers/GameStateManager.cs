@@ -34,6 +34,7 @@ public sealed partial class GameStateManager : Node
 		PlayerRepository.Create(SaveManager.Instance.Db, newData);
 		Player = newData;
 		GD.Print($"[GameState] Nouveau joueur créé : {Player.Name}");
+		InventoryManager.Instance.GrantStarterKit();
 		return Player;
 	}
 

@@ -18,6 +18,9 @@
     <Compile Include="..\src\Core\Attributes.cs" Link="Core\Attributes.cs" />
     <Compile Include="..\src\Data\Database.cs" Link="Data\Database.cs" />
     <Compile Include="..\src\Data\PlayerRepository.cs" Link="Data\PlayerRepository.cs" />
+    <Compile Include="..\src\Data\ItemTemplateRepository.cs" Link="Data\ItemTemplateRepository.cs" />
+    <Compile Include="..\src\Data\InventoryRepository.cs" Link="Data\InventoryRepository.cs" />
+    <Compile Include="..\src\Data\StarterKitSeeder.cs" Link="Data\StarterKitSeeder.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.2" />
