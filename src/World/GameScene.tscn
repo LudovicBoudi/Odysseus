@@ -1,16 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://gggggggggg01"]
+[gd_scene load_steps=5 format=3 uid="uid://gggggggggg01"]
 
 [ext_resource type="Script" path="res://src/World/GameScene.cs" id="1_gs"]
+[ext_resource type="Script" path="res://src/Entities/Player/PlayerController.cs" id="2_pc"]
+[ext_resource type="Script" path="res://src/Camera/ThirdPersonOrbit.cs" id="3_cam"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_player"]
 radius = 0.4
 height = 1.6
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_player"]
+radius = 0.4
+height = 1.6
+
 [node name="GameScene" type="Node3D"]
 script = ExtResource("1_gs")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 7)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.866, 0.25, -0.433, 0, 0.866, 0.5, 0.5, -0.433, 0.75, 4, 8, 4)
@@ -20,8 +23,32 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 size = Vector3(40, 1, 40)
 
-[node name="PlayerPlaceholder" type="CharacterBody3D" parent="."]
+[node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("2_pc")
+MaxSpeed = 5.0
+Acceleration = 12.0
+RotationSpeed = 10.0
+Gravity = 9.8
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerPlaceholder"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
 mesh = SubResource("CapsuleMesh_player")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_player")
+
+[node name="OrbitCamera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 7)
+script = ExtResource("3_cam")
+TargetPath = NodePath("../Player")
+OrbitDistance = 6.0
+OrbitMinDistance = 2.0
+OrbitMaxDistance = 15.0
+OrbitYaw = 0.0
+OrbitPitch = -0.35
+OrbitSpeed = 0.005
+PitchMin = -1.2
+PitchMax = 0.2
+ZoomStep = 0.8
+Smoothing = 10.0
+HeightOffset = 1.5
