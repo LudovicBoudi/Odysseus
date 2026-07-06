@@ -1,0 +1,44 @@
+# Godot 4 + .NET gitignore
+
+# Godot editor cache
+.godot/
+
+# .NET build output
+.mono/
+data_*/
+*.dll.config
+
+# C# build artifacts
+[Dd]bin/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite databases (saved games)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+saves/
+*.db
+
+# Logs
+*.log
+
+# Local environment overrides
+.env
