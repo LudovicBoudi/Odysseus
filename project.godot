@@ -16,6 +16,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+SaveManager="*res://src/Data/SaveManager.cs"
+
 [dotnet]
 
 project/assembly_name="Odysseus"
