@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dntgl64fxu4hl"
+path="res://.godot/imported/Pot_1_Lid.obj-347592190961cc352f7f8a5aca167d08.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pot_1_Lid.obj-347592190961cc352f7f8a5aca167d08.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Pot_1_Lid.obj"
+dest_files=["res://.godot/imported/Pot_1_Lid.obj-347592190961cc352f7f8a5aca167d08.mesh", "res://.godot/imported/Pot_1_Lid.obj-347592190961cc352f7f8a5aca167d08.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

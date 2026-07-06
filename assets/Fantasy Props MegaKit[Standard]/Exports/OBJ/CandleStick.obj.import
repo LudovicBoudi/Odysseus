@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbniv48idpty1"
+path="res://.godot/imported/CandleStick.obj-5856284f63ee3f3b9b2685f8e5b6a70f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/CandleStick.obj-5856284f63ee3f3b9b2685f8e5b6a70f.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/CandleStick.obj"
+dest_files=["res://.godot/imported/CandleStick.obj-5856284f63ee3f3b9b2685f8e5b6a70f.mesh", "res://.godot/imported/CandleStick.obj-5856284f63ee3f3b9b2685f8e5b6a70f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

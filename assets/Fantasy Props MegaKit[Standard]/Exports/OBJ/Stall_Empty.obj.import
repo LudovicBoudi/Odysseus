@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdayt0wda5wbc"
+path="res://.godot/imported/Stall_Empty.obj-90f4f8284d1d79753d1de88754c9134d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stall_Empty.obj-90f4f8284d1d79753d1de88754c9134d.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Stall_Empty.obj"
+dest_files=["res://.godot/imported/Stall_Empty.obj-90f4f8284d1d79753d1de88754c9134d.mesh", "res://.godot/imported/Stall_Empty.obj-90f4f8284d1d79753d1de88754c9134d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

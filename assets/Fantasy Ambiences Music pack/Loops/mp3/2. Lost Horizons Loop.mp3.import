@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dau7ly0i2ei0k"
+path="res://.godot/imported/2. Lost Horizons Loop.mp3-c913b7b2f98cc56a08edb0bc0026ac0d.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/mp3/2. Lost Horizons Loop.mp3"
+dest_files=["res://.godot/imported/2. Lost Horizons Loop.mp3-c913b7b2f98cc56a08edb0bc0026ac0d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

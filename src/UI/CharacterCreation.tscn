@@ -1,0 +1,133 @@
+[gd_scene load_steps=2 format=3 uid="uid://cccccccccc01"]
+
+[ext_resource type="Script" path="res://src/UI/CharacterCreation.cs" id="1_cc"]
+
+[node name="CharacterCreation" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cc")
+NameEdit = NodePath("Panel/Margin/V/NameRow/NameEdit")
+GenderOption = NodePath("Panel/Margin/V/GenderRow/GenderOption")
+SkinColor = NodePath("Panel/Margin/V/CustomRow/SkinColor")
+HairColor = NodePath("Panel/Margin/V/CustomRow/HairColor")
+AffiliationLabel = NodePath("Panel/Margin/V/AffiliationLabel")
+Announcement = NodePath("Panel/Margin/V/Announcement")
+ConfirmButton = NodePath("Panel/Margin/V/ConfirmButton")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.06, 0.12, 1)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -340.0
+offset_right = 400.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="V" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.95, 0.85, 0.6, 1)
+text = "Création du Perpétuel"
+
+[node name="NameRow" type="HBoxContainer" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="NameLabel" type="Label" parent="Panel/Margin/V/NameRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+theme_override_font_sizes/font_size = 16
+text = "Nom :"
+
+[node name="NameEdit" type="LineEdit" parent="Panel/Margin/V/NameRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(280, 0)
+theme_override_font_sizes/font_size = 16
+
+[node name="GenderRow" type="HBoxContainer" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="GenderLabel" type="Label" parent="Panel/Margin/V/GenderRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+theme_override_font_sizes/font_size = 16
+text = "Genre :"
+
+[node name="GenderOption" type="OptionButton" parent="Panel/Margin/V/GenderRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(280, 0)
+theme_override_font_sizes/font_size = 14
+
+[node name="CustomRow" type="HBoxContainer" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CustomLabel" type="Label" parent="Panel/Margin/V/CustomRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+theme_override_font_sizes/font_size = 16
+text = "Apparence :"
+
+[node name="SkinColor" type="ColorPickerButton" parent="Panel/Margin/V/CustomRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(64, 32)
+color = Color(0.95, 0.78, 0.6, 1)
+
+[node name="HairColor" type="ColorPickerButton" parent="Panel/Margin/V/CustomRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(64, 32)
+color = Color(0.18, 0.12, 0.08, 1)
+
+[node name="AffiliationLabel" type="Label" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.95, 0.85, 0.6, 1)
+text = "Choisis ton affiliation divine :"
+
+[node name="AffiliationGrid" type="GridContainer" parent="Panel/Margin/V"]
+layout_mode = 2
+columns = 4
+theme_override_constants/separation = 8
+
+[node name="Announcement" type="Label" parent="Panel/Margin/V"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = ""
+
+[node name="ConfirmButton" type="Button" parent="Panel/Margin/V"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 48)
+theme_override_font_sizes/font_size = 16
+text = "Commencer l'aventure"

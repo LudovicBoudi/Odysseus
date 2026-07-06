@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://gggggggggg01"]
+
+[ext_resource type="Script" path="res://src/World/GameScene.cs" id="1_gs"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_player"]
+radius = 0.4
+height = 1.6
+
+[node name="GameScene" type="Node3D"]
+script = ExtResource("1_gs")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 7)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866, 0.25, -0.433, 0, 0.866, 0.5, 0.5, -0.433, 0.75, 4, 8, 4)
+shadow_enabled = true
+
+[node name="Floor" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(40, 1, 40)
+
+[node name="PlayerPlaceholder" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerPlaceholder"]
+mesh = SubResource("CapsuleMesh_player")

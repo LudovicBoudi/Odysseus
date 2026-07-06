@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bimgoxmh4krdf"
+path="res://.godot/imported/6. Elden Trail.wav-3f3b8e143384558d57a0a71432aa3118.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Tracks/wav/6. Elden Trail.wav"
+dest_files=["res://.godot/imported/6. Elden Trail.wav-3f3b8e143384558d57a0a71432aa3118.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

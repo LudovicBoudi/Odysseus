@@ -9,8 +9,10 @@ data_*/
 *.dll.config
 
 # C# build artifacts
-[Dd]bin/
-[Oo]bj/
+bin/
+obj/
+Bin/
+Obj/
 
 # NuGet
 *.nupkg

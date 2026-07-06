@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwoqt1mncl15o"
+path="res://.godot/imported/HoleCover_90Angle.obj-58968044a569486a3b409576c7c1e69d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/HoleCover_90Angle.obj-58968044a569486a3b409576c7c1e69d.mesh"]
+
+source_file="res://assets/Medieval Village MegaKit[Standard]/OBJ/HoleCover_90Angle.obj"
+dest_files=["res://.godot/imported/HoleCover_90Angle.obj-58968044a569486a3b409576c7c1e69d.mesh", "res://.godot/imported/HoleCover_90Angle.obj-58968044a569486a3b409576c7c1e69d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

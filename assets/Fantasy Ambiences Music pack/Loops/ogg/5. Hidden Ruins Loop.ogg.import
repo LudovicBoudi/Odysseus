@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3nyg5y3ymhjy"
+path="res://.godot/imported/5. Hidden Ruins Loop.ogg-66e0d8d5d3e162251b8e40b86be96f2c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/ogg/5. Hidden Ruins Loop.ogg"
+dest_files=["res://.godot/imported/5. Hidden Ruins Loop.ogg-66e0d8d5d3e162251b8e40b86be96f2c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1yuho8vnmac5"
+path="res://.godot/imported/3. Starlit Path Loop.ogg-00122d0bbe78292c8a9a76ef7c9f487b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/ogg/3. Starlit Path Loop.ogg"
+dest_files=["res://.godot/imported/3. Starlit Path Loop.ogg-00122d0bbe78292c8a9a76ef7c9f487b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

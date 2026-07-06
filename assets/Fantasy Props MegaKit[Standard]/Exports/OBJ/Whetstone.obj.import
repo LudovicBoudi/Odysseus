@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkrwsexabf2pw"
+path="res://.godot/imported/Whetstone.obj-47a3d116b12a6550ad8bf3a05486659c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Whetstone.obj-47a3d116b12a6550ad8bf3a05486659c.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Whetstone.obj"
+dest_files=["res://.godot/imported/Whetstone.obj-47a3d116b12a6550ad8bf3a05486659c.mesh", "res://.godot/imported/Whetstone.obj-47a3d116b12a6550ad8bf3a05486659c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

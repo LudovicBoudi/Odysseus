@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkiho00kp2gs3"
+path="res://.godot/imported/7. Whispering Woods Loop.ogg-ca3f13a90dfcd8af1532cbc0295430cf.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/ogg/7. Whispering Woods Loop.ogg"
+dest_files=["res://.godot/imported/7. Whispering Woods Loop.ogg-ca3f13a90dfcd8af1532cbc0295430cf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

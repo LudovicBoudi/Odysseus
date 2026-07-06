@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c0r1s7csrepm5"
+path="res://.godot/imported/8. Timeless Journey.ogg-579a465c6d20b6288fa03157749bfae7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Tracks/ogg/8. Timeless Journey.ogg"
+dest_files=["res://.godot/imported/8. Timeless Journey.ogg-579a465c6d20b6288fa03157749bfae7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

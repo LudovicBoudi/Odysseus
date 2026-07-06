@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xdbt7qnpp1o2"
+path="res://.godot/imported/Nightstand_Shelf.obj-0e98214c26cc5536b2accf4158e34ee7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Nightstand_Shelf.obj-0e98214c26cc5536b2accf4158e34ee7.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Nightstand_Shelf.obj"
+dest_files=["res://.godot/imported/Nightstand_Shelf.obj-0e98214c26cc5536b2accf4158e34ee7.mesh", "res://.godot/imported/Nightstand_Shelf.obj-0e98214c26cc5536b2accf4158e34ee7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

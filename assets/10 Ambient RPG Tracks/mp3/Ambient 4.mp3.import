@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://le03jng64xtm"
+path="res://.godot/imported/Ambient 4.mp3-2189be2ebd9a0b889f1dbee0d0e37e38.mp3str"
+
+[deps]
+
+source_file="res://assets/10 Ambient RPG Tracks/mp3/Ambient 4.mp3"
+dest_files=["res://.godot/imported/Ambient 4.mp3-2189be2ebd9a0b889f1dbee0d0e37e38.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

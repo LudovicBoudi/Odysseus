@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvjpk4glnwbdw"
+path="res://.godot/imported/2. Lost Horizons.wav-ca1e7650b146a616faad45323024bece.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Tracks/wav/2. Lost Horizons.wav"
+dest_files=["res://.godot/imported/2. Lost Horizons.wav-ca1e7650b146a616faad45323024bece.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

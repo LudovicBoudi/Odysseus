@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwp1passvhutf"
+path="res://.godot/imported/BookGroup_Medium_1.obj-073e0938e9f6227508d803cd1a2207b7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BookGroup_Medium_1.obj-073e0938e9f6227508d803cd1a2207b7.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/BookGroup_Medium_1.obj"
+dest_files=["res://.godot/imported/BookGroup_Medium_1.obj-073e0938e9f6227508d803cd1a2207b7.mesh", "res://.godot/imported/BookGroup_Medium_1.obj-073e0938e9f6227508d803cd1a2207b7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

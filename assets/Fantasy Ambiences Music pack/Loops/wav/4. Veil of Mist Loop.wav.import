@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbfaq0sx6vu0b"
+path="res://.godot/imported/4. Veil of Mist Loop.wav-9584a2cd7251a8ad62d457ed874edc7a.sample"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/wav/4. Veil of Mist Loop.wav"
+dest_files=["res://.godot/imported/4. Veil of Mist Loop.wav-9584a2cd7251a8ad62d457ed874edc7a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

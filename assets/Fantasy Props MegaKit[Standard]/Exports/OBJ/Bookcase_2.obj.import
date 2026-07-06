@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyiqujx8uhqax"
+path="res://.godot/imported/Bookcase_2.obj-3b61da057002b17e4a3442fb47ac985f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bookcase_2.obj-3b61da057002b17e4a3442fb47ac985f.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Bookcase_2.obj"
+dest_files=["res://.godot/imported/Bookcase_2.obj-3b61da057002b17e4a3442fb47ac985f.mesh", "res://.godot/imported/Bookcase_2.obj-3b61da057002b17e4a3442fb47ac985f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

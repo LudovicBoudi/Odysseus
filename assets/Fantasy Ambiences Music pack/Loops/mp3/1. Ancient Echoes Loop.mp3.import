@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://du8ta2dq8rsl3"
+path="res://.godot/imported/1. Ancient Echoes Loop.mp3-c75eb941db7075c4c2d1a793d6631011.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/mp3/1. Ancient Echoes Loop.mp3"
+dest_files=["res://.godot/imported/1. Ancient Echoes Loop.mp3-c75eb941db7075c4c2d1a793d6631011.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

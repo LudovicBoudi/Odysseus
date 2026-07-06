@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dr2k4jv35csiu"
+path="res://.godot/imported/Ambient 2.ogg-7a1e5875413a838bda4d0be81a0bb7d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/10 Ambient RPG Tracks/ogg/Ambient 2.ogg"
+dest_files=["res://.godot/imported/Ambient 2.ogg-7a1e5875413a838bda4d0be81a0bb7d7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

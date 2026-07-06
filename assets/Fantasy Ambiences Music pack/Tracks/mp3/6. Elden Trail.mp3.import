@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cd42xmn3uxq1r"
+path="res://.godot/imported/6. Elden Trail.mp3-86c5453e6a67e1338d8844fbc9b77b9e.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Tracks/mp3/6. Elden Trail.mp3"
+dest_files=["res://.godot/imported/6. Elden Trail.mp3-86c5453e6a67e1338d8844fbc9b77b9e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

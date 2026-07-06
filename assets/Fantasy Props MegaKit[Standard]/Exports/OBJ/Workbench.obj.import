@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bkcxf7sk65qlc"
+path="res://.godot/imported/Workbench.obj-ea86140aa274c0f0d650b46546e691aa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Workbench.obj-ea86140aa274c0f0d650b46546e691aa.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/Workbench.obj"
+dest_files=["res://.godot/imported/Workbench.obj-ea86140aa274c0f0d650b46546e691aa.mesh", "res://.godot/imported/Workbench.obj-ea86140aa274c0f0d650b46546e691aa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

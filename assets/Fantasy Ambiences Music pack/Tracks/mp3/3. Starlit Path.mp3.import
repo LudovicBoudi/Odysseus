@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs6aboqg6pm1q"
+path="res://.godot/imported/3. Starlit Path.mp3-077871d8b19e3f6ecc6b927824025c36.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Tracks/mp3/3. Starlit Path.mp3"
+dest_files=["res://.godot/imported/3. Starlit Path.mp3-077871d8b19e3f6ecc6b927824025c36.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

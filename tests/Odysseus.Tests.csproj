@@ -17,6 +17,7 @@
     <Compile Include="..\src\Core\Enums.cs" Link="Core\Enums.cs" />
     <Compile Include="..\src\Core\Attributes.cs" Link="Core\Attributes.cs" />
     <Compile Include="..\src\Data\Database.cs" Link="Data\Database.cs" />
+    <Compile Include="..\src\Data\PlayerRepository.cs" Link="Data\PlayerRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.2" />

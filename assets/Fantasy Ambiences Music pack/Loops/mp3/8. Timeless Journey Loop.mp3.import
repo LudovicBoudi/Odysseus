@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://s22635jgurs8"
+path="res://.godot/imported/8. Timeless Journey Loop.mp3-c485bf4b9b45f23a7df133ae6ae3c4ae.mp3str"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/mp3/8. Timeless Journey Loop.mp3"
+dest_files=["res://.godot/imported/8. Timeless Journey Loop.mp3-c485bf4b9b45f23a7df133ae6ae3c4ae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

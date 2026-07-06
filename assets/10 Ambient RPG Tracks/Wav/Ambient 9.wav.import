@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://q4jo8lt6s164"
+path="res://.godot/imported/Ambient 9.wav-3bf18c105ac1897cb53f22e74b504c50.sample"
+
+[deps]
+
+source_file="res://assets/10 Ambient RPG Tracks/Wav/Ambient 9.wav"
+dest_files=["res://.godot/imported/Ambient 9.wav-3bf18c105ac1897cb53f22e74b504c50.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

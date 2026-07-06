@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dl0jk5cuh0vql"
+path="res://.godot/imported/4. Veil of Mist Loop.ogg-b53dc78806be42d8ab23b60c9cf141eb.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Fantasy Ambiences Music pack/Loops/ogg/4. Veil of Mist Loop.ogg"
+dest_files=["res://.godot/imported/4. Veil of Mist Loop.ogg-b53dc78806be42d8ab23b60c9cf141eb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

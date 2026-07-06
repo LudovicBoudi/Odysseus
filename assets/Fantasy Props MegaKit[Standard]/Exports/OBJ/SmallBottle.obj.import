@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cauoifmkw1smo"
+path="res://.godot/imported/SmallBottle.obj-b9a97f9be8bf2052907f0a41ab9bbbaf.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SmallBottle.obj-b9a97f9be8bf2052907f0a41ab9bbbaf.mesh"]
+
+source_file="res://assets/Fantasy Props MegaKit[Standard]/Exports/OBJ/SmallBottle.obj"
+dest_files=["res://.godot/imported/SmallBottle.obj-b9a97f9be8bf2052907f0a41ab9bbbaf.mesh", "res://.godot/imported/SmallBottle.obj-b9a97f9be8bf2052907f0a41ab9bbbaf.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
