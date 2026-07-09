@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://gggggggggg01"]
+[gd_scene load_steps=7 format=3 uid="uid://gggggggggg01"]
 
 [ext_resource type="Script" path="res://src/World/GameScene.cs" id="1_gs"]
 [ext_resource type="Script" path="res://src/Entities/Player/PlayerController.cs" id="2_pc"]
 [ext_resource type="Script" path="res://src/Camera/ThirdPersonOrbit.cs" id="3_cam"]
 [ext_resource type="Script" path="res://src/World/VoxelMesh.cs" id="4_vm"]
 [ext_resource type="Script" path="res://src/Entities/Mob/MobEntity.cs" id="5_mob"]
+[ext_resource type="PackedScene" path="res://src/UI/HUD/HUD.tscn" id="6_hud"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_player"]
 radius = 0.4
@@ -119,3 +120,5 @@ PitchMax = 0.2
 ZoomStep = 0.8
 Smoothing = 10.0
 HeightOffset = 1.5
+
+[node name="HUD" parent="." instance=ExtResource("6_hud")]

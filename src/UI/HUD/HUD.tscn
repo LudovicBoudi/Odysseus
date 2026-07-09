@@ -1,0 +1,202 @@
+[gd_scene load_steps=3 format=3 uid="uid://hhhhhhhhhh01"]
+
+[ext_resource type="Script" path="res://src/UI/HUD/HUD.cs" id="1_hud"]
+[ext_resource type="Script" path="res://src/UI/HUD/SkillBarSlot.cs" id="2_slot"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+HpBar = NodePath("Bottom/PlayerNameplate/V/HpBar")
+HpLabel = NodePath("Bottom/PlayerNameplate/V/HpBar/HpLabel")
+ManaBar = NodePath("Bottom/PlayerNameplate/V/ManaBar")
+ManaLabel = NodePath("Bottom/PlayerNameplate/V/ManaBar/ManaLabel")
+PlayerNameplateName = NodePath("Bottom/PlayerNameplate/H/PlayerNameplateName")
+PlayerLevelLabel = NodePath("Bottom/PlayerNameplate/H/PlayerLevelLabel")
+TargetNameplateName = NodePath("Bottom/TargetNameplate/V/H/TargetNameplateName")
+TargetLevelLabel = NodePath("Bottom/TargetNameplate/V/H/TargetLevelLabel")
+TargetHpBar = NodePath("Bottom/TargetNameplate/V/TargetHpBar")
+TargetHpLabel = NodePath("Bottom/TargetNameplate/V/TargetHpBar/TargetHpLabel")
+TargetPanel = NodePath("Bottom/TargetNameplate")
+Minimap = NodePath("TopRight/MinimapPanel")
+
+[node name="TopRight" type="Control" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -180.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = 192.0
+grow_horizontal = 0
+
+[node name="MinimapPanel" type="Panel" parent="TopRight"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MinimapLabel" type="Label" parent="TopRight/MinimapPanel"]
+layout_mode = 1
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 168.0
+offset_bottom = 24.0
+text = "Minimap"
+
+[node name="Bottom" type="Control" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -180.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SkillBars" type="GridContainer" parent="Bottom"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -72.0
+offset_right = 360.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 12
+theme_override_constants/separation = 4
+
+[node name="PlayerNameplate" type="Panel" parent="Bottom"]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -680.0
+offset_top = -180.0
+offset_right = -380.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="H" type="HBoxContainer" parent="Bottom/PlayerNameplate"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Portrait" type="ColorRect" parent="Bottom/PlayerNameplate/H"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+color = Color(0.4, 0.5, 0.8, 1)
+
+[node name="V" type="VBoxContainer" parent="Bottom/PlayerNameplate/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="H2" type="HBoxContainer" parent="Bottom/PlayerNameplate/H/V"]
+layout_mode = 2
+
+[node name="PlayerNameplateName" type="Label" parent="Bottom/PlayerNameplate/H/V/H2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Perseus"
+theme_override_font_sizes/font_size = 14
+
+[node name="PlayerLevelLabel" type="Label" parent="Bottom/PlayerNameplate/H/V/H2"]
+layout_mode = 2
+text = "Niv. 1"
+theme_override_font_sizes/font_size = 12
+
+[node name="HpBar" type="ProgressBar" parent="Bottom/PlayerNameplate/H/V"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+max_value = 200.0
+value = 200.0
+show_percentage = false
+
+[node name="HpLabel" type="Label" parent="Bottom/PlayerNameplate/H/V/HpBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "200/200"
+theme_override_font_sizes/font_size = 11
+
+[node name="ManaBar" type="ProgressBar" parent="Bottom/PlayerNameplate/H/V"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="ManaLabel" type="Label" parent="Bottom/PlayerNameplate/H/V/ManaBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "100/100"
+theme_override_font_sizes/font_size = 11
+
+[node name="TargetNameplate" type="Panel" parent="Bottom"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 380.0
+offset_top = -180.0
+offset_right = 680.0
+offset_bottom = -78.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="V" type="VBoxContainer" parent="Bottom/TargetNameplate"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="H" type="HBoxContainer" parent="Bottom/TargetNameplate/V"]
+layout_mode = 2
+
+[node name="TargetNameplateName" type="Label" parent="Bottom/TargetNameplate/V/H"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "?"
+theme_override_font_sizes/font_size = 14
+
+[node name="TargetLevelLabel" type="Label" parent="Bottom/TargetNameplate/V/H"]
+layout_mode = 2
+text = "Niv. ?"
+theme_override_font_sizes/font_size = 12
+
+[node name="TargetHpBar" type="ProgressBar" parent="Bottom/TargetNameplate/V"]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="TargetHpLabel" type="Label" parent="Bottom/TargetNameplate/V/TargetHpBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+text = "?"
+theme_override_font_sizes/font_size = 11
