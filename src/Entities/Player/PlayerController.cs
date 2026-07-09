@@ -98,16 +98,21 @@ public sealed partial class PlayerController : CharacterBody3D
 	private void BuildAnimMap()
 	{
 		if (_animPlayer == null) return;
-		foreach (string libName in _animPlayer.GetAnimationLibraryList())
+		string[] allAnims = _animPlayer.GetAnimationList();
+		foreach (string full in allAnims)
 		{
-			var lib = _animPlayer.GetAnimationLibrary(libName);
-			foreach (string animName in lib.GetAnimationList())
+			string lower = full.ToLowerInvariant();
+			if (lower.Contains("idle") || lower.Contains("stance"))
 			{
-				string full = $"{libName}/{animName}";
-				string lower = animName.ToLowerInvariant();
-				if (lower.Contains("idle") || lower.Contains("stance")) _idleAnim ??= full;
-				else if (lower.Contains("walk") || lower.Contains("jog")) _walkAnim ??= full;
-				else if (lower.Contains("run") && _walkAnim == null) _walkAnim = full;
+				if (string.IsNullOrEmpty(_idleAnim) || _idleAnim.ToLowerInvariant() != "idle" && lower == "idle") _idleAnim = full;
+			}
+			else if (lower.Contains("walk") || lower.Contains("jog"))
+			{
+				if (string.IsNullOrEmpty(_walkAnim) || _walkAnim.ToLowerInvariant() != "walk" && lower == "walk") _walkAnim = full;
+			}
+			else if (lower.Contains("run") && string.IsNullOrEmpty(_walkAnim))
+			{
+				_walkAnim = full;
 			}
 		}
 	}
