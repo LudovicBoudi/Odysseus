@@ -31,6 +31,8 @@ Obj/
 # OS
 .DS_Store
 Thumbs.db
+__MACOSX/
+._*
 
 # SQLite databases (saved games)
 *.sqlite
