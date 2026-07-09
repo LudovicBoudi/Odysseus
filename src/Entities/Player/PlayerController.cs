@@ -13,16 +13,80 @@ public sealed partial class PlayerController : CharacterBody3D
 
 	public bool InputEnabled { get; set; } = true;
 
+	[Export] public int MaxHp { get; set; } = 200;
+	[Export] public int MaxMana { get; set; } = 100;
+	[Export] public int Attack { get; set; } = 10;
+	[Export] public float AttackCooldown { get; set; } = 1.5f;
+
+	public int CurrentHp { get; set; } = 200;
+	public int CurrentMana { get; set; } = 100;
+	public Node3D? Target { get; private set; }
+	public bool IsDead => CurrentHp <= 0;
+
 	private AnimationPlayer? _animPlayer;
 	private string _currentAnim = "";
 	private string _idleAnim = "";
 	private string _walkAnim = "";
+	private string _attackAnim = "";
 	private Node3D? _characterModel;
 	private bool _animationsLoaded;
+	private float _attackTimer;
+	private bool _autoAttacking;
 
 	public override void _Ready()
 	{
 		LoadCharacterModel();
+		CurrentHp = MaxHp;
+		CurrentMana = MaxMana;
+	}
+
+	public void SetTarget(Node3D? target)
+	{
+		Target = target;
+		_autoAttacking = target != null;
+		GD.Print($"[Player] Target = {target?.Name ?? "<none>"}");
+	}
+
+	public void TakeDamage(int amount)
+	{
+		if (IsDead) return;
+		CurrentHp = Math.Max(0, CurrentHp - amount);
+		GD.Print($"[Player] HP {CurrentHp}/{MaxHp} (-{amount})");
+		if (CurrentHp <= 0) Die();
+	}
+
+	private void Die()
+	{
+		GD.Print("[Player] Mort — respawn dans 3s.");
+		CallDeferred(nameof(Respawn));
+	}
+
+	private void Respawn()
+	{
+		CurrentHp = MaxHp;
+		CurrentMana = MaxMana;
+		GlobalPosition = new Vector3(0, 1, 0);
+		Target = null;
+		_autoAttacking = false;
+		GD.Print("[Player] Respawn.");
+	}
+
+	private void TryAutoAttack(float delta)
+	{
+		if (!_autoAttacking || Target == null || IsDead) return;
+		if (!Target.HasMethod("TakeDamage")) return;
+		float dist = GlobalPosition.DistanceTo(Target.GlobalPosition);
+		if (dist > 2.5f) return;
+		_attackTimer -= delta;
+		if (_attackTimer > 0) return;
+		_attackTimer = AttackCooldown;
+		Target.Call("TakeDamage", Attack);
+		if (!string.IsNullOrEmpty(_attackAnim) && _animPlayer != null)
+		{
+			_animPlayer.Play(_attackAnim);
+			if (_animPlayer.HasAnimation(_attackAnim))
+				_animPlayer.GetAnimation(_attackAnim).LoopMode = Animation.LoopModeEnum.Linear;
+		}
 	}
 
 	private void LoadCharacterModel()
@@ -170,6 +234,8 @@ public sealed partial class PlayerController : CharacterBody3D
 
 		MoveAndSlide();
 		UpdateAnimation();
+		TryAutoAttack((float)delta);
+		_attackTimer = Math.Max(0, _attackTimer - (float)delta);
 	}
 
 	private void ApplyGravity(double delta)
