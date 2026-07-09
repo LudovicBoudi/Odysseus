@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://src/World/GameScene.cs" id="1_gs"]
 [ext_resource type="Script" path="res://src/Entities/Player/PlayerController.cs" id="2_pc"]
 [ext_resource type="Script" path="res://src/Camera/ThirdPersonOrbit.cs" id="3_cam"]
+[ext_resource type="Script" path="res://src/World/VoxelMesh.cs" id="4_vm"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_player"]
 radius = 0.4
@@ -23,6 +24,38 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 size = Vector3(40, 1, 40)
 
+[node name="TreeDead" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -6)
+script = ExtResource("4_vm")
+VoxPath = "res://assets/Dead_Tree.vox"
+VoxelSize = 0.04
+GenerateCollision = true
+CenterMesh = true
+
+[node name="TreePine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -8)
+script = ExtResource("4_vm")
+VoxPath = "res://assets/PineFluffy.vox"
+VoxelSize = 0.04
+GenerateCollision = true
+CenterMesh = true
+
+[node name="TreeFall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8)
+script = ExtResource("4_vm")
+VoxPath = "res://assets/Tree.vox"
+VoxelSize = 0.04
+GenerateCollision = true
+CenterMesh = true
+
+[node name="TreeWillow" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6)
+script = ExtResource("4_vm")
+VoxPath = "res://assets/Willow.vox"
+VoxelSize = 0.04
+GenerateCollision = true
+CenterMesh = true
+
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("2_pc")
@@ -30,9 +63,6 @@ MaxSpeed = 5.0
 Acceleration = 12.0
 RotationSpeed = 10.0
 Gravity = 9.8
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
-mesh = SubResource("CapsuleMesh_player")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("CapsuleShape3D_player")
